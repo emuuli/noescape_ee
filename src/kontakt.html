@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+<head>
+    <title>NoEscape</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!--[if lte IE 8]>
+    <script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="assets/css/main.css"/>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="assets/css/ie8.css"/><![endif]-->
+</head>
+<body class="no-sidebar">
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Inner -->
+        <div class="inner">
+            <header>
+                <h1><a href="index.html" id="logo">NoEscape</a></h1>
+            </header>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Avaleht</a></li>
+                <li><a href="reeglid.html">Reeglid</a></li>
+                <li><a href="broneeri.html">Broneeringud</a></li>
+                <li><a href="kkk.html">KKK</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Main -->
+    <div class="wrapper style1">
+
+        <div class="container">
+            <article id="main" class="special">
+                <header>
+                    <h2>Kontakt</h2>
+
+                    <center>
+                        <br>
+                        <h3>+372 56622003</h3>
+                        <h3>+372 53432165</h3>
+                        <h3>info@noescape.ee</h3>
+                        Tehase 22 <br>
+                        50107 Tartu <br>
+                        Eesti <br>
+
+                        <br><b>Pangarekvisiidid:</b>
+                        <br>Saaja: Kimeer OÜ
+                        <br>IBAN: EE812200221065312088 (Swedbank AS)
+                        <br>Selgitus: Teenustasu<br><br>
+
+                        <div id="map" style="width:800px;height:600px;background:white"></div>
+
+                        <script>
+function myMap() {
+var myCenter = new google.maps.LatLng(58.361685, 26.739289);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 17, mapTypeId: google.maps.MapTypeId.ROADMAP};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);   
+}
+
+
+
+
+
+
+
+
+
+
+
+                        </script>
+
+                        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwtt8-KrnJjhu3EoKS8eDujsMP0rEbhWk&callback=myMap"></script>
+
+                        KIMEER OÜ, Registrikood: 14136499
+                    </center>
+
+                </header>
+
+            </article>
+            <hr/>
+
+
+            <div align="center">
+
+                <script>
+function myFunction() {
+    alert("Tänan, sõnum edastatud!");
+}
+
+
+
+
+
+
+
+
+
+
+
+                </script>
+
+                <script language="JavaScript" src="scripts/gen_validatorv31.js" type="text/javascript"></script>
+
+                <body>
+                <form method="POST" name="contactform" action="contact-form-handler.php">
+                    <p>
+                        <label for='name'>Nimi:</label> <br>
+                        <input type="text" name="name">
+                    </p>
+                    <p>
+                        <label for='email'>Email:</label> <br>
+                        <input type="text" name="email"> <br>
+                    </p>
+                    <p>
+                        <label for='message'>Sõnum:</label> <br>
+                        <textarea name="message"></textarea>
+                    </p>
+                    <input type="submit" onclick="myFunction()" value="Saada sõnum!"><br>
+                </form>
+
+                <script language="JavaScript">
+// Code for validating the form
+// Visit http://www.javascript-coder.com/html-form/javascript-form-validation.phtml
+// for details
+var frmvalidator  = new Validator("contactform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+
+
+
+
+
+
+
+
+
+
+
+                </script>
+                <!--
+                Sample code from:
+                http://www.html-form-guide.com/contact-form/php-email-contact-form.html
+                -->
+
+
+                </body>
+
+
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<!-- Footer -->
+<div id="footer">
+    <div class="container">
+        <div class="row">
+
+
+        </div>
+        <hr/>
+        <div class="row">
+            <div class="12u">
+
+                <!-- Contact -->
+                <section class="contact">
+                    <header>
+                        <h3>Soovid meie kohta rohkem informatsiooni leida?</h3>
+                    </header>
+                    <p>Hoia end kursis kasutades erinevaid sotsiaalmeedia kanaleid</p>
+                    <ul class="icons">
+                        <li><a target="_blank" href="https://www.facebook.com/NoEscapeTartu/"
+                               class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                        <li><a target="_blank" href="https://www.instagram.com/noescapetartu/" class="icon fa-instagram"><span
+                                class="label">Instagram</span></a></li>
+                    </ul>
+                </section>
+
+                <!-- Copyright -->
+                <div class="copyright">
+                    <ul class="menu">
+                        <li>&copy; NoEscape. Kõik õigused kaitstud.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.onvisible.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<!--[if lte IE 8]>
+<script src="assets/js/ie/respond.min.js"></script><![endif]-->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
