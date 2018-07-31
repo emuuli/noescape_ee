@@ -28,5 +28,6 @@ folder into the web
 server where they will be served.
 
 ## Some images from the web page
+More images can be found [here](src/web_page_images).
 ![home_3](src/web_page_images/home_3.png)
 ![contact_map](src/web_page_images/contact_map.png)
